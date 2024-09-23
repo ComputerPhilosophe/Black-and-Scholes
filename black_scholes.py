@@ -10,7 +10,7 @@ t = 240/365
 sigma = 0.30
 
 def blackScholes(r, s, k, t, sigma, option_type="C"):
-    """Calculate BS option price for a call/put."""
+    
     d1 = (np.log(s/k) + (r + sigma**2/2) * t) / (sigma * np.sqrt(t))
     d2 = d1 - sigma * np.sqrt(t)
     
